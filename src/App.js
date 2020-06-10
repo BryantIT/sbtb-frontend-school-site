@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Loading from './components/loading/loading';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello Main App Page</h1>
+        <Loading />
       </div>
     );
   }
