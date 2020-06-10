@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -8,8 +9,8 @@ const Nav = () => {
 			<div class="menu-trigger"></div>
 			<nav id="menu">
 				<ul>
-					<li><a href="events.html">Courses</a></li>
-					<li><a href="gallery.html">Students</a></li>
+          <li><a href="gallery.html">Students</a></li>
+					<li><a href="events.html">Parents</a></li>
 					<li><a href="events.html">Events</a></li>
  				</ul>
 				<ul>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav/Nav'
+import { Route, Switch, withRouter  } from 'react-router-dom';
 
 
 class App extends Component {
