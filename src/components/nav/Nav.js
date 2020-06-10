@@ -11,10 +11,11 @@ const Nav = () => {
 				<ul>
           <li><a href="gallery.html">Students</a></li>
 					<li><a href="events.html">Parents</a></li>
-					<li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Teachers</a></li>
  				</ul>
 				<ul>
-					<li><a href="gallery.html">Teachers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="#fancy" class="get-contact">Contact</a></li>
    				</ul>
