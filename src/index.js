@@ -6,12 +6,24 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { usePromiseTracker } from "react-promise-tracker";
+import Loading from './components/loading/loading';
+
+const LoadingIndicator = props => {
+   const { promiseInProgress } = usePromiseTracker();
+
+   return (
+     promiseInProgress &&
+    <Loading />
+  );
+ }
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
       <Router>
         <App />
+        <LoadingIndicator/>
       </Router>
     </Provider>
   </React.StrictMode>,

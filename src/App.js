@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Loading from './components/loading/loading';
+
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Loading />
+        <h1>This is App.js</h1>
       </div>
     );
   }
