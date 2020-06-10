@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { usePromiseTracker } from "react-promise-tracker";
-import Loading from './components/loading/loading';
+import Loading from './components/loading/Loading';
 
 const LoadingIndicator = props => {
    const { promiseInProgress } = usePromiseTracker();
