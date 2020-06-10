@@ -7,8 +7,8 @@ const Home = () => {
 			<li>
 				<div class="container">
 					<div class="info">
-						<h2>It’s Time to <br /><span>Get back to school</span></h2>
-						<a href="#">Check out our new programs</a>
+						<h2>Welcome Back to <br /><span>Bayside High</span></h2>
+						<a href="#">Check out what's new</a>
 					</div>
 				</div>
 			</li>
