@@ -638,6 +638,7 @@ h1.single{
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 94px;
+	margin-top:  30px
 }
 
 .slider .bxslider li {
@@ -691,7 +692,6 @@ h1.single{
 
 .slider:after {
 	position: absolute;
-	background: url(/images/bg_white_arrow.png) no-repeat;
 	height: 30px;
 	width: 117px;
 	top: 0;
