@@ -153,7 +153,7 @@ input, textarea, select, button {
 
 a, a:visited, a:focus, a:active {
 	text-decoration: none;
-	color: #008bc4;
+	color: #631b1b;
 }
 
 a:hover {
@@ -220,7 +220,7 @@ a:hover {
 
 #menu a:hover,
 #menu .current a {
-	color: #008bc4;
+	color: #631b1b;
 	text-decoration: underline;
 }
 
@@ -397,14 +397,14 @@ h1.single{
 	height: 0;
 	border-style: solid;
 	border-width: 7.5px 7px 7.5px 0;
-	border-color: transparent #008cc4 transparent transparent;
+	border-color: transparent #631b1b transparent transparent;
 }
 
 #sidebar .sidemenu .current a,
 #sidebar .sidemenu a:hover {
-	border: 1px solid #008bc4;
+	border: 1px solid #631b1b;
 	color: #fff;
-	background: #008bc4;
+	background: #631b1b;
 	text-decoration: none;
 }
 
@@ -503,9 +503,9 @@ h1.single{
 }
 
 #sidebar .calendar td.upcoming>div {
-	background: #008bc4;
+	background: #631b1b;
 	color: #fff;
-	border: 1px solid #008bc4;
+	border: 1px solid #631b1b;
 }
 
 #sidebar .calendar td.upcoming>div.hover {
@@ -593,7 +593,7 @@ h1.single{
 
 #sidebar .calendar .note p:after {
 	position: absolute;
-	background: #008bc4;
+	background: #631b1b;
 	content: "";
 	height: 22px;
 	width: 22px;
@@ -769,7 +769,7 @@ h1.single{
 
 .posts .info h3 {
 	overflow: hidden;
-	color: #008bc3;
+	color: #631b1b;
 	font-family: 'BebasNeue';
 	font-size: 30px;
 	line-height: 34px;
@@ -855,7 +855,7 @@ h1 {
 .more {
 	padding-right: 23px;
 	background: url(/images/bg_arrow_blue_dark.png) no-repeat 100% 50%;
-	color: #008bc4;
+	color: #631b1b;
 }
 
 .btn-holder {
@@ -879,7 +879,7 @@ a.btn,
 
 a.btn.blue,
 .btn.blue {
-	background: #008bc4;
+	background: #631b1b;
 	color: #fff;
 }
 
@@ -960,7 +960,7 @@ a.btn.blue,
 	display: block;
 	float: right;
 	height: 100%;
-	background: #008bc4 url(/images/bg_arrow_information.png) no-repeat 50% 50%;
+	background: #631b1b url(/images/bg_arrow_information.png) no-repeat 50% 50%;
 }
 
 .info-request .title {
