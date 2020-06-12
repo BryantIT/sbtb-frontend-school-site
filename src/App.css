@@ -781,7 +781,7 @@ h1.single{
 
 .news {
 	overflow: hidden;
-	background: #2c4167;
+	background: #631b1b;
 	padding: 57px 0 70px 0;
 }
 
@@ -829,14 +829,14 @@ h1 {
 }
 
 .news .info h4 {
-	color: #8ed3ef;
-	font-size: 14px;
+	color: #fff;
+	font-size: 20px;
 	line-height: 20px;
 	font-weight: bold;
 }
 
 .news .info .date {
-	color: #899ec4;
+	color: #7ea8a4;
 	font-size: 12px;
 	line-height: 20px;
 	padding-bottom: 10px;
@@ -849,7 +849,7 @@ h1 {
 .news .more {
 	padding-right: 23px;
 	background: url(/images/bg_arrow_blue.png) no-repeat 100% 50%;
-	color: #8ed3ef;
+	color: #7ea8a4;
 }
 
 .more {
