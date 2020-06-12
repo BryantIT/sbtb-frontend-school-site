@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => {
   return (
     <header id="header">
-		<div class="container">
+		<div className="container">
 			<a href="index.html" id="logo" title="Welcome Tigers!">Bayside High School</a>
-			<div class="menu-trigger"></div>
+			<div className="menu-trigger"></div>
 			<nav id="menu">
 				<ul>
           <li><a href="gallery.html">Students</a></li>
@@ -17,7 +17,7 @@ const Nav = () => {
           <li><a href="events.html">Events</a></li>
           <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="#fancy" class="get-contact">Contact</a></li>
+					<li><a href="#fancy" className="get-contact">Contact</a></li>
    				</ul>
 			</nav>
 		</div>
