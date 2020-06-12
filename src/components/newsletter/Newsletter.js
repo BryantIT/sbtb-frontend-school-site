@@ -2,29 +2,29 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <section class="news">
-		<div class="container">
+    <section className="news">
+		<div className="container">
 			<h2>Latest news</h2>
 			<article>
-				<div class="pic"><img src="images/1.png" alt="" /></div>
-				<div class="info">
+				<div className="pic"><img src="images/1.png" alt="" /></div>
+				<div className="info">
 					<h4>Omnis iste natus error sit voluptatem accusantium </h4>
-					<p class="date">14 APR 2014, Jason Bang</p>
+					<p className="date">14 APR 2014, Jason Bang</p>
 					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
-					<a class="more" href="#">Read more</a>
+					<a className="more" href="#">Read more</a>
 				</div>
 			</article>
 			<article>
-				<div class="pic"><img src="images/1_1.png" alt="" /></div>
-				<div class="info">
+				<div className="pic"><img src="images/1_1.png" alt="" /></div>
+				<div className="info">
 					<h4>Omnis iste natus error sit voluptatem accusantium </h4>
-					<p class="date">14 APR 2014, Jason Bang</p>
+					<p className="date">14 APR 2014, Jason Bang</p>
 					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
-					<a class="more" href="#">Read more</a>
+					<a className="more" href="#">Read more</a>
 				</div>
 			</article>
-			<div class="btn-holder">
-				<a class="btn" href="#">See archival news</a>
+			<div className="btn-holder">
+				<a className="btn" href="#">See archival news</a>
 			</div>
 		</div>
 	</section>
