@@ -50,6 +50,7 @@ const Events = () => {
 				<a className="btn blue" href="#">See all upcoming events</a>
 			</div>
 		</div>
+  </section>
     </div>
   )
 }

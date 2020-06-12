@@ -4,6 +4,7 @@ import Nav from './components/nav/Nav';
 import Home from './components/home/Home';
 import Posts from './components/posts/Posts';
 import Newsletter from './components/newsletter/Newsletter';
+import Events from './components/events/Events';
 import { Route, Switch, withRouter  } from 'react-router-dom';
 
 
@@ -15,7 +16,7 @@ class App extends Component {
         <Home />
         <Posts />
         <Newsletter />
-        <h1>This is App.js</h1>
+        <Events />
       </div>
     );
   }

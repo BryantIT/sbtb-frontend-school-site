@@ -902,7 +902,7 @@ a.btn.blue,
 	width: 70px;
 	float: left;
 	border-radius: 4px;
-	background-color: #008bc3;
+	background-color: #631b1b;
 	margin-right: 30px;
 	margin-top: 4px;
 	text-align: center;
@@ -915,7 +915,7 @@ a.btn.blue,
 
 .current-date .date {
 	background-color: #fff;
-	color: #008bc3;
+	color: #631b1b;
 	font-size: 40px;
 	border-radius: 4px;
 	line-height: 49px;
