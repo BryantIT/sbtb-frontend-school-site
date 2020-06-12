@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <header id="header">
 		<div class="container">
-			<a href="index.html" id="logo" title="HarrisonHighSchool">HarrisonHighSchool</a>
+			<a href="index.html" id="logo" title="Welcome Tigers!">Bayside High School</a>
 			<div class="menu-trigger"></div>
 			<nav id="menu">
 				<ul>
