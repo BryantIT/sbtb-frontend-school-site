@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Login from '../users/Login'
 
 const Nav = () => {
   return (
@@ -17,7 +18,7 @@ const Nav = () => {
           <li><a href="events.html">Events</a></li>
           <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="#fancy" className="get-contact">Contact</a></li>
+          <Login />
    				</ul>
 			</nav>
 		</div>

@@ -189,7 +189,7 @@ a:hover {
 	background: url(/images/logosmallback.png) no-repeat;
 	position: relative;
 	z-index: 3;
-	padding-left: 200px
+	padding-left: 120px
 }
 
 
@@ -877,8 +877,8 @@ a.btn,
 	border: none;
 }
 
-a.btn.blue,
-.btn.blue {
+a.btn.red,
+.btn.red {
 	background: #631b1b;
 	color: #fff;
 }
@@ -936,12 +936,8 @@ a.btn.blue,
 ------------------------------------------------------------------------------*/
 
 .info-request {
-	border-radius: 4px;
-	background: #2b4167 url(/images/ico_information.png) no-repeat 35px 35px;
+	background: #fff;
 	display: block;
-	padding: 0 0 0 138px;
-	margin: 0 15px 100px 15px;
-	height: 134px;
 	overflow: hidden;
 }
 
@@ -949,27 +945,13 @@ a.btn.blue,
 	text-decoration: none;
 }
 
-.info-request .holder {
-	width: 70%;
-	display: block;
-	float: left;
-}
 
-.info-request .arrow {
-	width: 25%;
-	display: block;
-	float: right;
-	height: 100%;
-	background: #631b1b url(/images/bg_arrow_information.png) no-repeat 50% 50%;
-}
 
 .info-request .title {
-	color: #fff;
-	font-size: 60px;
+	color: #000000;
+	font-size: 22px;
 	font-family: 'BebasNeue';
-	line-height: 60px;
-	padding: 26px 0 0 0;
-	display: block;
+	display: flex;
 	font-weight: 300;
 }
 
