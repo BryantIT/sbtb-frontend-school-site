@@ -996,7 +996,7 @@ a.btn.blue,
 
 #footer {
 	clear: both;
-	background: #2c4167 url(/images/bg_white_arrow.png) no-repeat 50% 0;
+	background: #631b1b url(/images/bg_white_arrow.png) no-repeat 50% 0;
 	overflow: hidden;
 	padding: 91px 0 0 0;
 	font-size: 14px;
@@ -1025,7 +1025,7 @@ a.btn.blue,
 }
 
 #footer .col-1 li {
-	border-bottom: 1px solid #3c5177;
+	border-bottom: 1px solid #7e8798;
 	padding-top: 1px;
 	padding-bottom: 16px;
 	margin-bottom: 20px;
@@ -1069,7 +1069,7 @@ a.btn.blue,
 }
 
 #footer .col-2 li {
-	border-bottom: 1px solid #3c5177;
+	border-bottom: 1px solid #7e8798;
 	padding-bottom: 9px;
 	margin-bottom: 9px;
 }
@@ -1093,12 +1093,12 @@ a.btn.blue,
 }
 
 #footer .col-3 li a {
-	background: #8ed3ef;
+	background: #fff;
 	display: block;
 	width: 119px;
 	height: 35px;
 	line-height: 35px;
-	color: #46788d;
+	color: #631b1b;
 	font-size: 14px;
 	border-radius: 4px;
 	padding-left: 35px;
@@ -1108,7 +1108,7 @@ a.btn.blue,
 }
 
 #footer .col-3 li a:after {
-	background: #81c6e2 url(/images/ico_social.png) no-repeat 9px 8px;
+	background: #fff url(/images/ico_social.png) no-repeat 9px 8px;
 	position: absolute;
 	content: "";
 	top: 0;
@@ -1131,11 +1131,11 @@ a.btn.blue,
 
 #footer input {
 	border-radius: 4px;
-	background-color: #1e2d49;
+	background-color: #fff;
 	height: 52px;
 	padding: 16px 20px;
 	width: 100%;
-	color: #fff;
+	color: #000000;
 	border: none;
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -1155,17 +1155,17 @@ a.btn.blue,
 }
 
 #footer input::-webkit-input-placeholder {
-	color:#fff;
+	color:#7e8798;
 }
 #footer input::-moz-placeholder {
-	color:#fff;
+	color:#7e8798;
 }
 
 #footer .copy {
 	display: block;
 	text-align: center;
 	clear: both;
-	color: #899ec4;
+	color: #fff;
 	padding: 34px 0 26px 0;
 }
 
