@@ -9,9 +9,9 @@ const Footer = () => {
 				<article className="col-1">
 					<h3>Contact</h3>
 					<ul>
-						<li className="address"><a href="#">151 W Adams St<br/>Detroit, MI 48226</a></li>
-						<li className="mail"><a href="#">contact@harrisonuniversity.com</a></li>
-						<li className="phone last"><a href="#">(971) 536 845 924</a></li>
+						<li className="address"><a href="#">17777 Bowdoin St<br/>Pacific Palisades, CA 90272</a></li>
+						<li className="mail"><a href="#">belding@baysidehigh.com</a></li>
+						<li className="phone last"><a href="#">(555) 555 0111</a></li>
 					</ul>
 				</article>
 				<article className="col-2">
@@ -46,7 +46,7 @@ const Footer = () => {
 					</ul>
 				</article>
 			</section>
-			<p className="copy">Copyright 2014 Harrison High School. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by Vandelay Design" target="_blank">Vandelay Design</a>. All rights reserved.</p>
+			<p className="copy">Copyright 1996 Bayside High School. Designed by <a href="http://www.screechpowers.com/" title="Designed by Samuel 'Screech' Powers" target="_blank">Samuel 'Screech' Powers</a>. All rights reserved.</p>
 		</div>
 	</footer>
     </div>
