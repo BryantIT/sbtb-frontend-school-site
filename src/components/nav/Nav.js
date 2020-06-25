@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux'
 import Login from '../users/Login'
 
-const Nav = () => {
+const Nav = ({ currentUser }) => {
   return (
     <header id="header">
 		<div className="container">
@@ -18,7 +19,7 @@ const Nav = () => {
           <li><a href="events.html">Events</a></li>
           <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-          <Login /> 
+          <Login />
    				</ul>
 			</nav>
 		</div>
@@ -26,4 +27,10 @@ const Nav = () => {
   )
 }
 
-export default Nav
+const mapStateToProps = ({ currentUser }) => {
+  return {
+    currentUser
+  }
+}
+
+export default connect(mapStateToProps)(Nav)
