@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { updateLoginForm } from '../../actions/users/loginForm';
+import { login } from '../../actions/users/currentUser';
 
 
-const Login = ({ loginForm, updateLoginForm }) => {
+const Login = ({ loginForm, updateLoginForm, login }) => {
 
   const handleInputChange = event => {
     const { name, value } = event.target
@@ -21,9 +22,8 @@ const Login = ({ loginForm, updateLoginForm }) => {
 
   return (
     <div>
-
-  		<a href="#fancy" class="info-request">
-  				<span class="title">Login</span>
+  		<a href="#fancy" className="info-request">
+  				<span className="title">Login</span>
   		</a>
 
       <div id="fancy">
@@ -31,17 +31,17 @@ const Login = ({ loginForm, updateLoginForm }) => {
   		<form action="#" onSubmit={handleSubmit}>
   			<div className="left">
   				<fieldset className="mail">
-            <input value={loginForm.email} placeholder="Email address..."
+            <input name="email" value={loginForm.email} placeholder="Email address..."
             type="email" onChange={handleInputChange} />
           </fieldset>
   				<fieldset className="name">
-            <input value ={loginForm.password} placeholder="Password..."
+            <input name="password" value={loginForm.password} placeholder="Password..."
             type="password" onChange={handleInputChange} />
           </fieldset>
   			</div>
 
   			<div className="btn-holder">
-  				<button className="btn red" type="submit" value="Log In">Submit</button>
+  				<button className="btn red" type="submit" value="LOGIN">Submit</button>
   			</div>
   		</form>
   	</div>
@@ -55,4 +55,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { updateLoginForm })(Login)
+export default connect(mapStateToProps, { updateLoginForm, login })(Login)

@@ -15,12 +15,12 @@ export const login = (credentials, history) => {
       },
       body: JSON.stringify(credentials)
     })
-    .then(r => r.json())
+    .then(res => res.json())
     .then(response => {
       if (response.error) {
         alert(response.error)
       } else {
-        
+
         history.push('/')
       }
     })
