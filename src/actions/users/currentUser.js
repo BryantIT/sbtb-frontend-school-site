@@ -37,3 +37,34 @@ export const login = (credentials, history) => {
     .catch(console.log)
   }
 }
+
+export const logout = event => {
+  return dispatch => {
+    dispatch(clearCurrentUser())
+    return fetch("http://localhost:3000/api/v1/logout", {
+      credentials: "include",
+      method: 'DELETE'
+    })
+  }
+}
+
+export const getCurrentUser = () => {
+  return dispatch => {
+    return fetch("http://localhost:3000/api/v1/get_current_user", {
+      credentials: "include",
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      },
+    })
+      .then(r => r.json())
+      .then(response => {
+        if (response.error) {
+          console.log(response.error)
+        } else {
+          dispatch(setCurrentUser(response.data))
+        }
+      })
+      .catch(console.log)
+  }
+}

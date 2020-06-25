@@ -6,10 +6,17 @@ import Posts from './components/posts/Posts';
 import Newsletter from './components/newsletter/Newsletter';
 import Events from './components/events/Events';
 import Footer from './components/footer/Footer';
-import { Route, Switch, withRouter  } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { getCurrentUser } from './actions/users/currentUser';
 
 
 class App extends Component {
+
+  componentDidMount(){
+    this.props.getCurrentUser()
+  }
+
   render() {
     return (
       <div>
@@ -24,4 +31,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return ({
+    loggedIn: !!state.currentUser
+  })
+}
+
+export default withRouter(connect(mapStateToProps, {getCurrentUser})(App));

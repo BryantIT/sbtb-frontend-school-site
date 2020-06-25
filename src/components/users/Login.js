@@ -4,7 +4,7 @@ import { updateLoginForm } from '../../actions/users/loginForm';
 import { login } from '../../actions/users/currentUser';
 
 
-const Login = ({ loginForm, updateLoginForm, login }) => {
+const Login = ({ loginForm, updateLoginForm, login, history }) => {
 
   const handleInputChange = event => {
     const { name, value } = event.target
