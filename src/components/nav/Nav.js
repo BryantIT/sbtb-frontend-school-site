@@ -18,7 +18,7 @@ const Nav = () => {
           <li><a href="events.html">Events</a></li>
           <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-          <Login />
+          <Login /> 
    				</ul>
 			</nav>
 		</div>
