@@ -7,12 +7,11 @@ const Logout = ({ logout, history }) => {
 
   return (
     <form onSubmit={(event) => {
-        event.prevemtDefault()
+        event.preventDefault()
         logout()
-        history.push('/')
-      }
+        history.push('/')}
       }>
-      <input type="submit" value="logout" />
+      <input className="button-link" type="submit" value="Logout" />
     </form>
   )
 }

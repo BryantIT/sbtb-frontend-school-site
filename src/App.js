@@ -6,6 +6,7 @@ import Posts from './components/posts/Posts';
 import Newsletter from './components/newsletter/Newsletter';
 import Events from './components/events/Events';
 import Footer from './components/footer/Footer';
+import Login from './components/users/Login';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';

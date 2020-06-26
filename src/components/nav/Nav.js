@@ -21,7 +21,8 @@ const Nav = ({ currentUser }) => {
           <li><a href="events.html">Events</a></li>
           <li><a href="events.html">Clubs</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-          <Logout />
+          <li><a href="gallery.html"><Logout /></a></li>
+
    				</ul>
 			</nav>
 		</div>

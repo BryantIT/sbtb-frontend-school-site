@@ -72,6 +72,27 @@ input[type=submit]::-moz-focus-inner {
 	border: 0;
 }
 
+.button-link {
+	text-align: left;
+	background: none;
+	margin: 0;
+	border: none;
+	-moz-user-select: text;
+	float: left;
+	padding: 0 24px;
+	font-size: 21px;
+	line-height: 28px;
+	color: #8c929c;
+	font-family: 'BebasNeue';
+	display: block;
+}
+
+.button-link:hover,
+.button-link.current a {
+	color: #631b1b;
+	text-decoration: underline;
+}
+
 .hide {
 	position: absolute !important;
 	left: -9999em !important;
@@ -189,7 +210,7 @@ a:hover {
 	background: url(/images/logosmallback.png) no-repeat;
 	position: relative;
 	z-index: 3;
-	padding-left: 120px
+	padding-left: 160px
 }
 
 
@@ -948,11 +969,18 @@ a.btn.red,
 
 
 .info-request .title {
-	color: #000000;
-	font-size: 22px;
+	text-align: left;
+	background: none;
+	margin: 0;
+	border: none;
+	-moz-user-select: text;
+	float: left;
+	padding: 0 24px;
+	font-size: 21px;
+	line-height: 28px;
+	color: #8c929c;
 	font-family: 'BebasNeue';
-	display: flex;
-	font-weight: 300;
+	display: block;
 }
 
 .info-request .text {
