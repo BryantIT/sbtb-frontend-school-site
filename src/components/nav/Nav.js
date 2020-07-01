@@ -13,8 +13,8 @@ const Nav = ({ currentUser }) => {
 			<nav id="menu">
 				<ul>
           <li><NavLink to='/students'>Students</NavLink></li>
-					<li><a href="events.html">Parents</a></li>
-          <li><a href="gallery.html">Teachers</a></li>
+					<li><NavLink to='/parents'>Parents</NavLink></li>
+          <li><NavLink to='/teachers'>Teachers</NavLink></li>
  				</ul>
 				<ul>
           <li><a href="events.html">Events</a></li>
