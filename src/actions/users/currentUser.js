@@ -1,4 +1,5 @@
 import { resetLoginForm } from './loginForm';
+import { trackPromise } from 'react-promise-tracker'
 
 
 export const setCurrentUser = user => {
@@ -14,29 +15,32 @@ export const clearCurrentUser = () => {
   }
 }
 
-export const login = (credentials, history) => {
-  return dispatch => {
-    return fetch("http://localhost:3000/api/v1/login", {
-      credentials: "include",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(credentials)
-    })
-    .then(res => res.json())
-    .then(response => {
-      if (response.error) {
-        alert(response.error)
-      } else {
-        dispatch(setCurrentUser(response.data))
-        dispatch(resetLoginForm())
-        history.push('/')
-      }
-    })
-    .catch(console.log)
+
+  export const login = (credentials, history) => {
+    return dispatch => {
+      return trackPromise(fetch("http://localhost:3000/api/v1/login", {
+
+        credentials: "include",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(credentials)
+      })
+      .then(res => res.json())
+      .then(response => {
+        if (response.error) {
+          alert(response.error)
+        } else {
+          dispatch(setCurrentUser(response.data))
+          dispatch(resetLoginForm())
+          history.push('/')
+        }
+      })
+    )
+      .catch(console.log)
+    }
   }
-}
 
 export const logout = event => {
   return dispatch => {

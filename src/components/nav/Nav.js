@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Login from '../users/Login';
 import Logout from '../users/Logout';
 
 const Nav = ({ currentUser }) => {
