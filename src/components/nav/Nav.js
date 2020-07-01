@@ -12,7 +12,7 @@ const Nav = ({ currentUser }) => {
 			<div className="menu-trigger"></div>
 			<nav id="menu">
 				<ul>
-          <li><a href="gallery.html">Students</a></li>
+          <li><NavLink to='/students'>Students</NavLink></li>
 					<li><a href="events.html">Parents</a></li>
           <li><a href="gallery.html">Teachers</a></li>
  				</ul>
