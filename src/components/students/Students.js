@@ -1,10 +1,26 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Login from '../users/Login';
 
-const Students = () => {
+const Students = ({ currentUser }) => {
 
   return (
-    <h1>Students</h1>
+    currentUser ?
+    <div>
+      <h1>Students</h1>
+    </div>:
+
+    <div>
+      <Login />
+    </div>
+
   )
 }
 
-export default Students
+const mapStateToProps = ({ currentUser }) => {
+  return {
+    currentUser
+  }
+}
+
+export default connect(mapStateToProps)(Students)

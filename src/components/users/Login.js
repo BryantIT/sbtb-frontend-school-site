@@ -21,12 +21,9 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
   }
 
   return (
-    <div>
-  		<a href="#fancy" className="info-request">
-  				<span className="title">Login</span>
-  		</a>
 
-      <div id="fancy">
+
+      <div>
   		<h2>Login</h2>
   		<form action="#" onSubmit={handleSubmit}>
   			<div className="left">
@@ -45,7 +42,6 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
   			</div>
   		</form>
   	</div>
-    </div>
   )
 }
 

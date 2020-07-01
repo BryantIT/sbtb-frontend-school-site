@@ -6,7 +6,6 @@ import Logout from '../users/Logout';
 
 const Nav = ({ currentUser }) => {
   return (
-    currentUser ?
     <header id="header">
 		<div className="container">
 			<NavLink id="logo" title="Welcome Tigers!" to='/'>Bayside High School</NavLink>
@@ -26,28 +25,7 @@ const Nav = ({ currentUser }) => {
    				</ul>
 			</nav>
 		</div>
-	</header> :
-
-  <header id="header">
-  <div className="container">
-    <NavLink id="logo" title="Welcome Tigers!" to='/'>Bayside High School</NavLink>
-    <div className="menu-trigger"></div>
-    <nav id="menu">
-      <ul>
-        <li><NavLink to='/students'>Students</NavLink></li>
-        <li><a href="events.html">Parents</a></li>
-        <li><a href="gallery.html">Teachers</a></li>
-      </ul>
-      <ul>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="events.html">Clubs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <Login />
-        </ul>
-    </nav>
-  </div>
-</header>
-
+	</header>
   )
 }
 
