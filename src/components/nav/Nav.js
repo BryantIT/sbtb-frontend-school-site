@@ -9,7 +9,7 @@ const Nav = ({ currentUser }) => {
     currentUser ?
     <header id="header">
 		<div className="container">
-			<a href="index.html" id="logo" title="Welcome Tigers!">Bayside High School</a>
+			<NavLink id="logo" title="Welcome Tigers!" to='/'>Bayside High School</NavLink>
 			<div className="menu-trigger"></div>
 			<nav id="menu">
 				<ul>
@@ -30,11 +30,11 @@ const Nav = ({ currentUser }) => {
 
   <header id="header">
   <div className="container">
-    <a href="index.html" id="logo" title="Welcome Tigers!">Bayside High School</a>
+    <NavLink id="logo" title="Welcome Tigers!" to='/'>Bayside High School</NavLink>
     <div className="menu-trigger"></div>
     <nav id="menu">
       <ul>
-        <li><a href="gallery.html">Students</a></li>
+        <li><NavLink to='/students'>Students</NavLink></li>
         <li><a href="events.html">Parents</a></li>
         <li><a href="gallery.html">Teachers</a></li>
       </ul>
