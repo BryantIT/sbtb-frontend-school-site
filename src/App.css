@@ -2016,14 +2016,14 @@ a.btn.red,
 	margin: auto;
 	max-width: 525px;
 	min-height: 670px;
-	padding-top: 80px;
+	padding-top: 60px;
 	position: inherit;
 }
 .login-html{
 	width:100%;
 	height:100%;
 	position:absolute;
-	padding:90px 70px 50px 70px;
+	padding: 40px 70px 50px 70px;
 	background: rgba(99, 27, 27, 0.94);
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
