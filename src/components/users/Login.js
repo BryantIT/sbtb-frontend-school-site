@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { updateLoginForm } from '../../actions/users/loginForm';
 import { login } from '../../actions/users/currentUser';
+import Signup from './Signup';
 
 
 const Login = ({ loginForm, updateLoginForm, login, history }) => {
@@ -48,26 +49,7 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
 
   			</div>
   			<div className="sign-up-htm">
-  				<div className="group">
-  					<label for="user" className="label">Username</label>
-  					<input id="user" type="text" className="input" />
-  				</div>
-  				<div className="group">
-  					<label for="pass" className="label">Password</label>
-  					<input id="pass" type="password" className="input" data-type="password" />
-  				</div>
-  				<div className="group">
-  					<label for="pass" className="label">Repeat Password</label>
-  					<input id="pass" type="password" className="input" data-type="password" />
-  				</div>
-  				<div className="group">
-  					<label for="pass" className="label">Email Address</label>
-  					<input id="pass" type="text" className="input" />
-  				</div>
-  				<div className="group">
-  					<input type="submit" className="button" value="Sign Up" />
-  				</div>
-  				<div className="hr"></div>
+  				<Signup />
   				</div>
   			</div>
   		</div>
