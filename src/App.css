@@ -210,7 +210,7 @@ a:hover {
 	background: url(/images/logosmallback.png) no-repeat;
 	position: relative;
 	z-index: 3;
-	padding-left: 160px
+	padding-left: -200px
 }
 
 
@@ -223,7 +223,8 @@ a:hover {
 
 #menu ul {
 	padding: 0 80px;
-	display: inline-flex;
+	display: inline-block;
+	padding-right: 125px;
 }
 
 #menu li {
