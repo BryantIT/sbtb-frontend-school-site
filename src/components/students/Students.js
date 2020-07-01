@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import Login from '../users/Login';
+import Logout from '../users/Logout'
 
 const Students = ({ currentUser }) => {
 
@@ -63,6 +65,9 @@ const Students = ({ currentUser }) => {
 			</div>
 
 			<aside id="sidebar">
+
+            <div><Logout /></div><br />
+
 				<div className="widget clearfix calendar">
 					<h2>Event calendar</h2>
 					<div className="head">
