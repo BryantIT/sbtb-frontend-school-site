@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-dom';
+import { connect } from 'react-redux';
 import { updateSignupForm } from '../../actions/users/signupForm';
 import { signup } from '../../actions/users/currentUser';
 
@@ -32,27 +32,33 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
       <form onSubmit={handleSubmit}>
         <div className="group">
           <label for="pass" className="label">First Name</label>
-          <input id="pass" type="text" className="input" placeholder="First Name"/>
+          <input id="pass" type="text" className="input" placeholder="First Name" value={signupFormData.first_name} name='first_name' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
           <label for="pass" className="label">Last Name</label>
-          <input id="pass" type="text" className="input" placeholder="Last Name"/>
+          <input id="pass" type="text" className="input" placeholder="Last Name" value={signupFormData.last_name} name='last_name' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
           <label for="pass" className="label">Email Address</label>
-          <input id="pass" type="text" className="input" placeholder="Email Address"/>
+          <input id="pass" type="text" className="input" placeholder="Email Address" value={signupFormData.email} name='email' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
           <label for="pass" className="label">Password</label>
-          <input id="pass" type="password" className="input" data-type="password" placeholder="Password"/>
+          <input id="pass" type="password" className="input" data-type="password" placeholder="Password" value={signupFormData.password} name='password' onChange={handleUserProfileChange}/>
         </div>
         <div className="hr"></div>
         <div className="group">
-          <input type="submit" className="button" value="Sign Up" />
+          <button className="button" type="submit" value="SIGNUP">Signup</button>
         </div>
       </form>
     </div>
   )
 }
 
-export default Signup
+const mapStateToProps = state => {
+  return {
+    signupFormData: state.signupForm
+  }
+}
+
+export default connect(mapStateToProps, { updateSignupForm, signup } )(Signup)
