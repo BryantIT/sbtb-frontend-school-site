@@ -5,9 +5,8 @@ import Login from '../users/Login';
 import Logout from '../users/Logout'
 
 const Students = ({ currentUser }) => {
-
   return (
-    currentUser ?
+    currentUser && currentUser.attributes.role === "standard" ?
     <div>
       <div className="divider"></div>
 
