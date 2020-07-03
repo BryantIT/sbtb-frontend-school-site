@@ -9,12 +9,14 @@ import Teachers from './components/teachers/Teachers';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
+import { getEvents } from './actions/events/events';
 
 
 class App extends Component {
 
   componentDidMount(){
     this.props.getCurrentUser()
+    this.props.getEvents()
   }
 
   render() {
@@ -39,4 +41,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default withRouter(connect(mapStateToProps, {getCurrentUser})(App));
+export default withRouter(connect(mapStateToProps, {getCurrentUser, getEvents})(App));
