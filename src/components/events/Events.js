@@ -1,7 +1,8 @@
-import React from 'react'
-import EventCalendar from 'react-event-calendar'
+import React from 'react';
+import { connect } from 'react-redux';
+import EventCalendar from 'react-event-calendar';
 
-const Events = () => {
+const Events = ({ events }) => {
   return (
 
       <EventCalendar
@@ -14,4 +15,10 @@ const Events = () => {
   )
 }
 
-export default Events
+const mapStateToProps = ({ events }) => {
+  return {
+    events
+  }
+}
+
+export default connect(mapStateToProps)(Events)
