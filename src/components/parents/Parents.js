@@ -163,6 +163,7 @@ const Parents = ({ currentUser }) => {
     </div>:
 
     <div>
+      <h2>Parent Login</h2>
       <Login />
     </div>
 

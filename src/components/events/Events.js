@@ -5,27 +5,26 @@ import moment from 'moment';
 
 const localizer = momentLocalizer(moment)
 
-class Events extends Component {
+const Events = ({ events }) => {
 
 
-render() {
-  console.log("Why are you null?", this.props.events)
+
+  console.log("Why are you null?", events)
   return (
     <div>
       <h1>hello</h1>
-      {
-        this.props.events.map(e =>
-        <h1>{e.attributes.title}</h1>)
-      }
-
-
+      <p>{events.length}</p>
     </div>
 
   )
-}
 
 }
 
-const mapStateToProps = state => ({ events: state.events })
+const mapStateToProps = ({ events }) => {
+  console.log("mapStateToProps", events)
+  return {
+    events
+  }
+}
 
 export default connect(mapStateToProps)(Events)

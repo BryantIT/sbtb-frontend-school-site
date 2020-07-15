@@ -163,6 +163,7 @@ const Students = ({ currentUser }) => {
     </div>:
 
     <div>
+      <h2>Student Login</h2>  
       <Login />
     </div>
 

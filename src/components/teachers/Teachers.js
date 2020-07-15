@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Login from '../users/Login';
 import Logout from '../users/Logout';
-import Events from '../events/Events';
 
 const Teachers = ({ currentUser }) => {
   return (
@@ -161,12 +160,11 @@ const Teachers = ({ currentUser }) => {
 
 
 		</div>
-
-    <Events />
 	</div>
     </div>:
 
     <div>
+      <h2>Teacher Login</h2>
       <Login />
     </div>
 

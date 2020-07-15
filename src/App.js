@@ -6,6 +6,7 @@ import Login from './components/users/Login';
 import Students from './components/students/Students';
 import Parents from './components/parents/Parents';
 import Teachers from './components/teachers/Teachers';
+import Events from './components/events/Events';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
@@ -28,6 +29,7 @@ class App extends Component {
           <Route exact path='/students' component={Students} />
           <Route exact path='/parents' component={Parents} />
           <Route exact path='/teachers' component={Teachers} />
+          <Route exact path='/events' component={Events} />
 
         </Switch>
       </div>
