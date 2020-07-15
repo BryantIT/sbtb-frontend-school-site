@@ -19,7 +19,6 @@ export const getEvents = () => {
       if (event.error) {
         console.log(event.error)
       } else {
-        console.log("Fetch", event.data)
         dispatch(setEvents(event.data))
       }
     })
