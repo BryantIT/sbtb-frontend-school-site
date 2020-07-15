@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Calendar, momentLocalizer, Views } from 'react-big-calendar';
+import Calendar from 'rc-calendar';
 import moment from 'moment';
 
-const localizer = momentLocalizer(moment)
 
+const format = 'YYYY-MM-DD';
+const now = moment();
 
 const Events = ({ events }) => {
 
@@ -12,13 +13,7 @@ const Events = ({ events }) => {
   return (
     events ?
     <div>
-      <Calendar
-      localizer={localizer}
-      events={events}
-      startAccessor="start"
-      endAccessor="end"
-      style={{ height: 500 }}
-    />
+      <Calendar />
 
     </div> : ""
 
