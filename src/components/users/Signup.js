@@ -19,13 +19,6 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
     signup(signupFormData, history)
   }
 
-  const confirmPass = event => {
-    const pass = React.findDOMNode(this.refs.pass).value;
-    const cPass = React.findDOMNode(this.refs.cPass).value;
-    if (pass != cPass) {
-      alert('Passwords do not match, please try again')
-    }
-  }
 
   return (
     <div>
