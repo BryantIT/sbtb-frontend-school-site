@@ -25,18 +25,18 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
 <div className="container">
   <div className="login-wrap">
   	<div className="login-html">
-  		<input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label for="tab-1" className="tab">Sign In</label>
-  		<input id="tab-2" type="radio" name="tab" className="sign-up" /><label for="tab-2" className="tab">Sign Up</label>
+  		<input id="tab-1" type="radio" name="tab" className="sign-in" defaultChecked /><label htmlFor="tab-1" className="tab">Sign In</label>
+  		<input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab">Sign Up</label>
   		  <div className="login-form">
   			<div className="sign-in-htm">
           <form onSubmit={handleSubmit}>
   				<div className="group">
-  					<label for="email" className="label">Email</label>
+  					<label htmlFor="email" className="label">Email</label>
               <input className="input" name="email" value={loginForm.email} placeholder="Email address..."
               type="email" onChange={handleInputChange} />
   				</div>
   				<div className="group">
-  					<label for="pass" className="label">Password</label>
+  					<label htmlFor="pass" className="label">Password</label>
               <input className="input" name="password" value={loginForm.password} placeholder="Password..."
               type="password" onChange={handleInputChange} />
   				</div>

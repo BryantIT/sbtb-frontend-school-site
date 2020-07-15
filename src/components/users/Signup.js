@@ -31,20 +31,20 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="group">
-          <label for="pass" className="label">First Name</label>
-          <input id="pass" type="text" className="input" placeholder="First Name" value={signupFormData.first_name} name='first_name' onChange={handleUserProfileChange}/>
+          <label htmlFor="fName" className="label">First Name</label>
+          <input id="fName" type="text" className="input" placeholder="First Name" value={signupFormData.first_name} name='first_name' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
-          <label for="pass" className="label">Last Name</label>
-          <input id="pass" type="text" className="input" placeholder="Last Name" value={signupFormData.last_name} name='last_name' onChange={handleUserProfileChange}/>
+          <label htmlFor="lName" className="label">Last Name</label>
+          <input id="lName" type="text" className="input" placeholder="Last Name" value={signupFormData.last_name} name='last_name' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
-          <label for="pass" className="label">Email Address</label>
-          <input id="pass" type="text" className="input" placeholder="Email Address" value={signupFormData.email} name='email' onChange={handleUserProfileChange}/>
+          <label htmlFor="email" className="label">Email Address</label>
+          <input id="email" type="text" className="input" placeholder="Email Address" value={signupFormData.email} name='email' onChange={handleUserProfileChange}/>
         </div>
         <div className="group">
-          <label for="pass" className="label">Password</label>
-          <input id="pass" type="password" className="input" data-type="password" placeholder="Password" value={signupFormData.password} name='password' onChange={handleUserProfileChange}/>
+          <label htmlFor="password" className="label">Password</label>
+          <input id="password" type="password" className="input" data-type="password" placeholder="Password" value={signupFormData.password} name='password' onChange={handleUserProfileChange}/>
         </div>
         <div className="hr"></div>
         <div className="group">

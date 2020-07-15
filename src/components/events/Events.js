@@ -1,21 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import EventCalendar from 'react-event-calendar';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import moment from 'moment';
+
+const localizer = momentLocalizer(moment)
 
 const Events = ({ events }) => {
   return (
+    <div>
+      <h1>hello</h1>
 
-      <EventCalendar
-        month={7}
-        year={2015}
-        events={events}
-        onEventClick={(target, eventData, day) => console.log(eventData)}
-    />
+
+    </div>
 
   )
 }
 
 const mapStateToProps = ({ events }) => {
+  console.log(events)
   return {
     events
   }
