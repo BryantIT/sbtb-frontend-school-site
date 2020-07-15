@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/nav/Nav';
 import MainContainer from './components/MainContainer';
-import Login from './components/users/Login';
 import Students from './components/students/Students';
 import Parents from './components/parents/Parents';
 import Teachers from './components/teachers/Teachers';
