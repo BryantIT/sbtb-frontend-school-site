@@ -77,6 +77,7 @@ const Teachers = ({ currentUser }) => {
 					</div>
 					<div className="table">
 						<table>
+              <tbody>
 							<tr>
 								<th className="col-1">Mon</th>
 								<th className="col-2">Tue</th>
@@ -147,6 +148,7 @@ const Teachers = ({ currentUser }) => {
 								<td className="col-6 disable"><div>3</div></td>
 								<td className="col-7 disable"><div>4</div></td>
 							</tr>
+              </tbody>
 						</table>
 					</div>
 					<div className="note">
