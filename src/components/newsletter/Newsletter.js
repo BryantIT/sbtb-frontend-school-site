@@ -1,34 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const Newsletter = () => {
-  return (
-    <section className="news">
-		<div className="container">
-			<h2>Latest news</h2>
-			<article>
-				<div className="pic"><img src="images/1.png" alt="" /></div>
-				<div className="info">
-					<h4>Newsletter Title </h4>
-					<p className="date">14 APR 2014, Jason Bang</p>
-					<p>Blah Blah Blah, newsletter body, blah blah blah</p>
-					<a className="more" href="#">Read more</a>
-				</div>
-			</article>
-			<article>
-				<div className="pic"><img src="images/1_1.png" alt="" /></div>
-				<div className="info">
-					<h4>Omnis iste natus error sit voluptatem accusantium </h4>
-					<p className="date">14 APR 2014, Jason Bang</p>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores (...)</p>
-					<a className="more" href="#">Read more</a>
-				</div>
-			</article>
-			<div className="btn-holder">
-				<a className="btn" href="#">See archival news</a>
-			</div>
-		</div>
-	</section>
-  )
+class Newsletter extends Component {
+
+  render() {
+    const { newsletters } = this.props
+    return (
+      <section className="news">
+  		<div className="container">
+  			<h2>Latest news</h2>
+        {newsletters.slice(0, 4).reverse().map(n => (
+  			<article>
+  				<div className="pic"><img src="images/1.png" alt="" /></div>
+  				<div className="info">
+              <div>
+                <h4>{n.attributes.title}</h4>
+                <p className="date">{n.attributes.published}, {n.attributes.author}</p>
+                <p>{n.attributes.body}</p>
+                <a className="more" href="#">Read more</a>
+              </div>
+          </div>
+  			</article>
+      ))}
+  			<div className="btn-holder">
+  				<a className="btn" href="#">Newsletter</a>
+  			</div>
+  		</div>
+  	</section>
+    )
+  }
 }
 
-export default Newsletter
+const mapStateToProps = state => {
+  return {
+    newsletters: state.newsletters
+  }
+}
+
+
+export default connect(mapStateToProps)(Newsletter)
