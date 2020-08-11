@@ -13,7 +13,7 @@ class Newsletter extends Component {
     			<h2>Latest news</h2>
           {newsletters.reverse().map(n => (
     			<article>
-    				<div className="pic"><img src="images/1.png" alt="" /></div>
+    				<div className="pic-small"><img src="https://triviahappy.com/wp-content/uploads/2014/05/buddybands.jpg" alt="" /></div>
     				<div className="info">
                 <div>
                   <h4>{n.attributes.title}</h4>

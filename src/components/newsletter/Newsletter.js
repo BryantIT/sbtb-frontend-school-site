@@ -12,7 +12,7 @@ class Newsletter extends Component {
   			<h2>Latest news</h2>
         {newsletters.slice(0, 4).reverse().map(n => (
   			<article>
-  				<div className="pic"><img src="images/1.png" alt="" /></div>
+  				<div className="pic-small"><img src="images/1.png" alt="" /></div>
   				<div className="info">
               <div>
                 <h4>{n.attributes.title}</h4>

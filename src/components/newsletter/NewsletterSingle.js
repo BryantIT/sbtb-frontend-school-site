@@ -11,7 +11,7 @@ const NewsletterSingle = ({ newsletter }) => {
       <div className="container">
         <h2>{newsletter.attributes.title}</h2>
         <article>
-          <div className="pic"><img src="https://triviahappy.com/wp-content/uploads/2014/05/buddybands.jpg" alt="" /></div>
+          <div className="pic-newsletter"><img src="https://triviahappy.com/wp-content/uploads/2014/05/buddybands.jpg" alt="" /></div>
           <p className="date">{newsletter.attributes.published}, {newsletter.attributes.author}</p>
           <div className="info">
               <div>
