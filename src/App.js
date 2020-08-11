@@ -6,6 +6,7 @@ import Students from './components/students/Students';
 import Parents from './components/parents/Parents';
 import Teachers from './components/teachers/Teachers';
 import Events from './components/events/Events';
+import NewsletterSingle from './components/newsletter/NewsletterSingle';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
@@ -22,6 +23,7 @@ class App extends Component {
   }
 
   render() {
+    const { newsletters } = this.props
     return (
       <div>
         <Nav />
@@ -31,6 +33,13 @@ class App extends Component {
           <Route exact path='/parents' component={Parents} />
           <Route exact path='/teachers' component={Teachers} />
           <Route exact path='/events' component={Events} />
+          <Route exact path='/newsletters/:id' render={props => {
+              const newsletter = newsletters.find(newsletter =>
+                newsletter.id === props.match.params.id)
+
+                return <NewsletterSingle newsletter={newsletter} {...props}/>
+              }
+            }/>
 
         </Switch>
       </div>
@@ -40,7 +49,8 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return ({
-    loggedIn: !!state.currentUser
+    loggedIn: !!state.currentUser,
+    newsletters: state.newsletters
   })
 }
 

@@ -807,6 +807,11 @@ h1.single{
 	padding: 57px 0 70px 0;
 }
 
+.container-news {
+	width: 100%;
+	padding-top: 57px;
+}
+
 h1,
 h2 {
 	color: #7e8798;

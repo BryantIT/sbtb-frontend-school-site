@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Newsletter extends Component {
 
@@ -17,7 +18,7 @@ class Newsletter extends Component {
                 <h4>{n.attributes.title}</h4>
                 <p className="date">{n.attributes.published}, {n.attributes.author}</p>
                 <p>{n.attributes.body.substr(0,150)}...</p>
-                <a className="more" href="#">Read more</a>
+                <Link className="more" to={`/newsletters/${n.id}`}>Read more</Link>
               </div>
           </div>
           <br />
