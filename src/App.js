@@ -10,6 +10,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
 import { getEvents } from './actions/events/events';
+import { getNewsletters } from './actions/newsletters/newsletters';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
   componentDidMount(){
     this.props.getCurrentUser()
     this.props.getEvents()
+    this.props.getNewsletters()
   }
 
   render() {
@@ -42,4 +44,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default withRouter(connect(mapStateToProps, {getCurrentUser, getEvents})(App));
+export default withRouter(connect(mapStateToProps, {getCurrentUser, getEvents, getNewsletters})(App));
