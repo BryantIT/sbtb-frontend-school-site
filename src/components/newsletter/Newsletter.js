@@ -16,10 +16,11 @@ class Newsletter extends Component {
               <div>
                 <h4>{n.attributes.title}</h4>
                 <p className="date">{n.attributes.published}, {n.attributes.author}</p>
-                <p>{n.attributes.body}</p>
+                <p>{n.attributes.body.substr(0,150)}...</p>
                 <a className="more" href="#">Read more</a>
               </div>
           </div>
+          <br />
   			</article>
       ))}
   			<div className="btn-holder">
