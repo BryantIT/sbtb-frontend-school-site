@@ -5,6 +5,7 @@ const Footer = () => {
     <div>
       <footer id="footer">
 		<div className="container">
+      <hr />
 			<section>
 				<article className="col-1">
 					<h3>Contact</h3>

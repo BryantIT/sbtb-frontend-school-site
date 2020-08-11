@@ -13,7 +13,6 @@ class MainContainer extends Component {
         <Home />
         <Posts />
         <Newsletter />
-        <Events />
         <Footer />
       </div>
     )
