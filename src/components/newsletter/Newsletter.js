@@ -25,7 +25,7 @@ class Newsletter extends Component {
   			</article>
       ))}
   			<div className="btn-holder">
-  				<a className="btn" href="#">Newsletter</a>
+  				<Link className="btn" to="/newsletter">Newsletter</Link>
   			</div>
   		</div>
   	</section>

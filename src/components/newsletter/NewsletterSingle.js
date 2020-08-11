@@ -21,8 +21,6 @@ const NewsletterSingle = ({ newsletter }) => {
           </div>
           <br />
         </article>
-        <div className="btn-holder">
-        </div>
       </div>
     </section>
     </div> : null

@@ -7,6 +7,7 @@ import Parents from './components/parents/Parents';
 import Teachers from './components/teachers/Teachers';
 import Events from './components/events/Events';
 import NewsletterSingle from './components/newsletter/NewsletterSingle';
+import NewsletterFull from './components/newsletter/NewsletterFull';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
@@ -40,7 +41,7 @@ class App extends Component {
                 return <NewsletterSingle newsletter={newsletter} {...props}/>
               }
             }/>
-
+          <Route exact path='/newsletter' component={NewsletterFull} />
         </Switch>
       </div>
     );
