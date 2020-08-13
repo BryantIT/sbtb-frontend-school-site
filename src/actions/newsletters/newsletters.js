@@ -1,7 +1,22 @@
+import { resetNewsletterForm } from './newsletterForm';
+
 export const setNewsletters = newsletters => {
   return {
     type: "SET_NEWSLETTERS",
     newsletters
+  }
+}
+
+export const clearNewsletters = () => {
+  return {
+    type: "CLEAR_NEWSLETTERS"
+  }
+}
+
+export const addNewsletter = newsletter => {
+  return {
+    type: "ADD_NEWSLETTER",
+    newsletter
   }
 }
 
