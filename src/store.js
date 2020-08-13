@@ -5,13 +5,16 @@ import loginForm from './reducers/users/loginForm';
 import signupForm from './reducers/users/signupForm';
 import events from './reducers/events/events';
 import newsletters from './reducers/newsletter/newsletters';
+import newsletterForm from './reducers/newsletter/newsletterForm';
+
 
 const reducer = combineReducers({
   currentUser,
   loginForm,
   signupForm,
   events,
-  newsletters
+  newsletters,
+  newsletterForm
 })
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
