@@ -65,7 +65,9 @@ const Students = ({ currentUser }) => {
 
 			<aside id="sidebar">
 
-            <div><Logout /></div><br />
+            <div><Logout /></div>
+            <div><NavLink className="button-link" to='/newsletter-editor'>Newsletter</NavLink></div>
+            <br />
 
 				<div className="widget clearfix calendar">
 					<h2>Event calendar</h2>
@@ -163,7 +165,7 @@ const Students = ({ currentUser }) => {
     </div>:
 
     <div>
-      <h2>Student Login</h2>  
+      <h2>Student Login</h2>
       <Login />
     </div>
 
