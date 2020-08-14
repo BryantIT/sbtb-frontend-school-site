@@ -3,7 +3,7 @@ const initialState = {
   author: "",
   published: "",
   body: "",
-  imageUrl: ""
+  imageUrl: null
 }
 
 export default (state=initialState, action) => {

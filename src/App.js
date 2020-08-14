@@ -9,6 +9,7 @@ import Events from './components/events/Events';
 import NewsletterSingle from './components/newsletter/NewsletterSingle';
 import NewsletterFull from './components/newsletter/NewsletterFull';
 import NewsletterEditor from './components/newsletter/NewsletterEditor';
+import NewNewsletterFormWrapper from './components/newsletter/NewNewsletterFormWrapper';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/users/currentUser';
@@ -44,6 +45,7 @@ class App extends Component {
             }/>
           <Route exact path='/newsletter' component={NewsletterFull} />
           <Route exact path='/newsletter-editor' component={NewsletterEditor} />
+          <Route exact path='/newsletter-editor/new' component={NewNewsletterFormWrapper} />
         </Switch>
       </div>
     );
