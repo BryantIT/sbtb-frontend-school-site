@@ -3,7 +3,7 @@ import NewsletterForm from './NewsletterForm';
 import { createNewsletter } from '../../actions/newsletters/newsletters';
 import { connect } from 'react-redux';
 
-const NewsletterFormWrapper = ({ history, createUserMovie }) => {
+const NewsletterFormWrapper = ({ history, createNewsletter }) => {
 
   const handleSubmit = (formData) => {
     createNewsletter(formData, history)

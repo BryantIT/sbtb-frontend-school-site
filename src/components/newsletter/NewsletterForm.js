@@ -37,7 +37,6 @@ const NewsletterForm = ({ userId, formData, updateNewsletterForm, newsletter,
                 <textarea className="form-input form-textarea" name="body" value={body} placeholder="Body..."
                  onChange={handleInputChange} />
             </div>
-            <input type="hidden" name="userId" value={userId} />
             <button className="newsletter-button" type="submit" value="Publish">Publish</button>
           </form>
       </div>
